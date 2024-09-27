@@ -53,10 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
-    let currentIndex = 0; // Tracks the current slide index
-    let autoSlideInterval; // Will hold the interval ID for auto-sliding
+    let currentIndex = 0; 
+    let autoSlideInterval; 
 
-    // Function to update the active dot indicator
     function updateDots() {
         dots.forEach((dot, index) => {
             if (index === currentIndex) {
@@ -67,45 +66,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Function to display a specific slide based on the index
     function showSlides(index) {
         if (index >= slides.length) {
-            currentIndex = 0; // Reset to first slide if at the end
+            currentIndex = 0; // 
         } else if (index < 0) {
-            currentIndex = slides.length - 1; // Go to last slide if at the beginning
+            currentIndex = slides.length - 1; 
         } else {
-            currentIndex = index; // Otherwise, set to the provided index
+            currentIndex = index; 
         }
         slider.style.transform = `translateX(-${currentIndex * 100}%)`; // Slide transition
-        updateDots(); // Update the dots to reflect the current slide
+        updateDots(); 
     }
 
-    // Function to move to the next slide
     function nextSlide() {
         showSlides(currentIndex + 1);
     }
 
-    // Function to move to the previous slide
     function prevSlide() {
         showSlides(currentIndex - 1);
     }
 
-    // Start the automatic sliding of images
     function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, 4000); // Slide every 4 seconds
+        autoSlideInterval = setInterval(nextSlide, 4000);
     }
 
-    // Stop the automatic sliding
     function stopAutoSlide() {
-        clearInterval(autoSlideInterval); // Clear the interval
+        clearInterval(autoSlideInterval); 
     }
 
-    // Add click event listeners to dots for direct slide navigation
     dots.forEach(dot => {
         dot.addEventListener('click', () => {
-            stopAutoSlide(); // Stop auto-slide when manually selecting a slide
-            showSlides(parseInt(dot.dataset.index)); // Show the selected slide
-            startAutoSlide(); // Restart auto-slide
+            stopAutoSlide(); 
+            showSlides(parseInt(dot.dataset.index)); 
+            startAutoSlide(); 
         });
     });
 
