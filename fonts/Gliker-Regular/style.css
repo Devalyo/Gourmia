@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Gliker';
+    src: local('Gliker Regular'), local('Gliker-Regular'),
+        url('Gliker-Regular.woff2') format('woff2'),
+        url('Gliker-Regular.woff') format('woff'),
+        url('Gliker-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
