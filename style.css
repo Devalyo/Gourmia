@@ -31,7 +31,6 @@ header
 }
 
 
-
 .btn-primary
 {
     background-color: #7b5947;
@@ -43,6 +42,12 @@ header
 {
     border-color: #7b5947;
     background-color: #7b5947;
+}
+.btn-primary:active
+{
+    border-color: #7b5947;
+    background-color: #5a4234 !important;
+    box-shadow: none;
 }
 .btn-success
 {
@@ -157,6 +162,23 @@ header
     gap: 2vh;
 
 }
+
+.btn-success
+{
+    font-weight: 600;
+}
+.btn-danger
+{
+    background-color: #EB2332;
+    font-weight: 550;
+}
+
+
+.ifood
+{
+    margin-right: 10px !important;
+}
+
 
 .float
 {

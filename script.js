@@ -106,7 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
     prevBtn.addEventListener('click', prevSlide);
 
     sliderContainer.addEventListener('mouseover', stopAutoSlide);
-
     sliderContainer.addEventListener('mouseout', startAutoSlide);
 
     startAutoSlide();
