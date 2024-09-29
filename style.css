@@ -49,12 +49,7 @@ header
     background-color: #5a4234 !important;
     box-shadow: none;
 }
-.btn-success
-{
-    color: #FFF;
-    font-weight: 500;
 
-}
 
 
 #geladinhos {
@@ -167,6 +162,9 @@ header
 .btn-success
 {
     font-weight: 600;
+    color: #FFF;
+    font-weight: 500;
+
 }
 .btn-danger
 {
