@@ -156,6 +156,7 @@ header
     flex-direction: column;
     gap: 2vh;
     height: 80vh;
+    margin: 0px;
 
 }
 
