@@ -1,2 +1,2 @@
-# Front-end para sorveteria e açaíteria.
+# Website sorveteria e açaíteria
 WIP
